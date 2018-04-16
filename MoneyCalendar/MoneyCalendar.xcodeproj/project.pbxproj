@@ -12,9 +12,11 @@
 		60FDF8B52084FD6100E45AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FDF8B32084FD6100E45AFC /* Main.storyboard */; };
 		60FDF8B72084FD6200E45AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60FDF8B62084FD6200E45AFC /* Assets.xcassets */; };
 		60FDF8BA2084FD6200E45AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FDF8B82084FD6200E45AFC /* LaunchScreen.storyboard */; };
+		E580FA52FB6BC186646382CD /* Pods_MoneyCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436B88F60CF275862BEA51F1 /* Pods_MoneyCalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		436B88F60CF275862BEA51F1 /* Pods_MoneyCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FDF8AC2084FD6100E45AFC /* MoneyCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FDF8AF2084FD6100E45AFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60FDF8B12084FD6100E45AFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		60FDF8B62084FD6200E45AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60FDF8B92084FD6200E45AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60FDF8BB2084FD6200E45AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9501A47C6A411B6A601189E1 /* Pods-MoneyCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyCalendar/Pods-MoneyCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		B0B9A5B9A5D4DD08D0CA53DD /* Pods-MoneyCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyCalendar/Pods-MoneyCalendar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E580FA52FB6BC186646382CD /* Pods_MoneyCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B935E540559F99A9DF677B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9501A47C6A411B6A601189E1 /* Pods-MoneyCalendar.debug.xcconfig */,
+				B0B9A5B9A5D4DD08D0CA53DD /* Pods-MoneyCalendar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		60FDF8A32084FD6100E45AFC = {
 			isa = PBXGroup;
 			children = (
 				60FDF8AE2084FD6100E45AFC /* MoneyCalendar */,
 				60FDF8AD2084FD6100E45AFC /* Products */,
+				3B935E540559F99A9DF677B6 /* Pods */,
+				6E2BACCDF32755B22605067B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = MoneyCalendar;
 			sourceTree = "<group>";
 		};
+		6E2BACCDF32755B22605067B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				436B88F60CF275862BEA51F1 /* Pods_MoneyCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60FDF8BE2084FD6200E45AFC /* Build configuration list for PBXNativeTarget "MoneyCalendar" */;
 			buildPhases = (
+				96965F23B942B994AC7F2E4C /* [CP] Check Pods Manifest.lock */,
 				60FDF8A82084FD6100E45AFC /* Sources */,
 				60FDF8A92084FD6100E45AFC /* Frameworks */,
 				60FDF8AA2084FD6100E45AFC /* Resources */,
+				CEEA1D0105098B55F1AB63BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96965F23B942B994AC7F2E4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyCalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEEA1D0105098B55F1AB63BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyCalendar/Pods-MoneyCalendar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyCalendar/Pods-MoneyCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60FDF8A82084FD6100E45AFC /* Sources */ = {
@@ -278,15 +343,13 @@
 		};
 		60FDF8BF2084FD6200E45AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9501A47C6A411B6A601189E1 /* Pods-MoneyCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJ3JBWEJT5;
 				INFOPLIST_FILE = MoneyCalendar/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackmobile.MoneyCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +359,13 @@
 		};
 		60FDF8C02084FD6200E45AFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B9A5B9A5D4DD08D0CA53DD /* Pods-MoneyCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJ3JBWEJT5;
 				INFOPLIST_FILE = MoneyCalendar/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackmobile.MoneyCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
